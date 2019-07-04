@@ -1,0 +1,29 @@
+{
+  "name": "cristusvivit",
+  "version": "1.0.0",
+  "description": "Proyecto de segundo parcial de la clase de Negocios Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/negocios-web-christus-vivit/Christus-Vivit.git"
+  },
+  "author": "Maynor Peña, Jackeline Varela, Luis Dario, Stephen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/negocios-web-christus-vivit/Christus-Vivit/issues"
+  },
+  "homepage": "https://github.com/negocios-web-christus-vivit/Christus-Vivit#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.0.1",
+    "mysql2": "^1.6.5",
+    "pug": "^2.0.4",
+    "sequelize": "^5.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
