@@ -1,12 +1,28 @@
 
 const User = require('../models/user');
 const bcrypt = require('bcryptjs');
+const { body } = require('express-validator');
 
 exports.UserRegistration  = async (req, res) => {
     // Obtener todos los proyectos
     // const articulo = await Articulo.findAll();
 
     res.render('register');
+};
+
+exports.UserLogin  = async (req, res) => {
+    // Obtener todos los proyectos
+    // const articulo = await Articulo.findAll();
+
+    res.render('login');
+};
+
+
+exports.UserValidation  = async (req, res) => {
+    // Obtener todos los proyectos
+    // const articulo = await Articulo.findAll();
+
+    res.render('login');
 };
 
 
@@ -19,20 +35,17 @@ exports.GuardarUsuario  = async (req, res) => {
     const email = req.body.email;
     const username = req.body.username;
     const password = req.body.password;
-    const password2 = req.body.password2;
+    console.log(name)
+    let errores = [];
     
-    req.checkBody('Name', 'Name is required').notEmpty();
-    req.checkBody('email', 'email is required').notEmpty();
-    req.checkBody('email', 'email is not valid').isEmail();
-    req.checkBody('password', 'password is required').notEmpty();
-    req.checkBody('passwoed2', 'passwords do not match').equals(req.body.password);
+    if (!name && !email && !username && !password) {
+        errores.push({'texto': 'Se encotraron errores'});
+    }
+   
+    if (errores.length > 0) {
+        console.log(errores)
+        res.render('register');
 
-    let errors = req.validationErrors();
-
-    if(errors){
-        res.render('register',{
-            errors:errors
-        });
     }else{
         let newUser = new User({
             name:name,
@@ -41,18 +54,21 @@ exports.GuardarUsuario  = async (req, res) => {
             password:password
         });
 
-        bcrypt.getSalt(10, function(err, salt){
+        bcrypt.genSalt(10, function(err, salt){
             bcrypt.hash(newUser.password, salt,  async function(err, hash){
-                if(error){
+                if(err){
                     console.log(err);
                 }
+
                 newUser.password = hash;
-                await User.create(newUser);
-                req.flash('succes', 'Puedes loggearte ahora');
+                
+                await User.create({name: newUser.name, email: newUser.email, username: newUser.username, password: newUser.password});
 
                 res.redirect('/');
             });
 
         });
     }
+        
+    
 };
