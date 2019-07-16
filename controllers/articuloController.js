@@ -5,5 +5,5 @@ exports.articulosHome = async (req, res) => {
     // Obtener todos los proyectos
     // const articulo = await Articulo.findAll();
 
-    res.send('index');
+    res.render('index');
 };
