@@ -22,7 +22,6 @@ const Index = db.define('index', {
 },{
     hooks: {
         
-
         beforeCreate(index) {
 
             console.log('Antes de Registrar');
