@@ -14,6 +14,9 @@ const Index = db.define('index', {
         primaryKey: true,
         autoIncrement: true
     },
+    articulo: {
+        type:Sequelize.STRING
+    },
 
     // TODO: Posiblidad de mas campos para el modelo
 
@@ -22,18 +25,22 @@ const Index = db.define('index', {
 },{
     hooks: {
         
+        // Registrar datos
         beforeCreate(index) {
 
-            console.log('Antes de Registrar');
-            // const url = slug(index)
-
-            // TODO: REGISTRAR DATOS 
+            console.log('REGISTRAR');
+            const url = slug(index.articulo).toLowerCase();
+            
+            index.url = `${url}-${shortid.generate()}`;
             
         },
+
+        // Actuañizar datos
         beforeUpdate(index) {
 
-
-            // TODO: ACTUALIZAR DATOS
+            console.log('ACTUALIZAR');
+            const url = slug(index.articulo).toLowerCase();
+            index.url = `${url}-${shortid - generate()}`;
             
         }
         
