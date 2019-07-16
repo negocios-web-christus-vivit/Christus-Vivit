@@ -1,412 +1,289 @@
 doctype html
-html
+html(lang='en')
   head
+    title Aid - Free Bootstrap 4 Template by Colorlib
     meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title Cristus Vivit
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='apple-touch-icon', href='apple-touch-icon.png')
-    link(rel='stylesheet', href='css/bootstrap.min.css')
-    link(rel='stylesheet', href='css/bootstrap-theme.min.css')
-    link(rel='stylesheet', href='css/fontAwesome.css')
-    link(rel='stylesheet', href='css/hero-slider.css')
-    link(rel='stylesheet', href='css/tooplate-style.css')
-    link(rel='stylesheet', href='https://necolas.github.io/normalize.css/8.0.1/normalize.css')
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800', rel='stylesheet')
-    script(src='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(href='https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900', rel='stylesheet')
+    link(rel='stylesheet', href='css/open-iconic-bootstrap.min.css')
+    link(rel='stylesheet', href='css/animate.css')
+    link(rel='stylesheet', href='css/owl.carousel.min.css')
+    link(rel='stylesheet', href='css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='css/magnific-popup.css')
+    link(rel='stylesheet', href='css/aos.css')
+    link(rel='stylesheet', href='css/ionicons.min.css')
+    link(rel='stylesheet', href='css/bootstrap-datepicker.css')
+    link(rel='stylesheet', href='css/jquery.timepicker.css')
+    link(rel='stylesheet', href='css/flaticon.css')
+    link(rel='stylesheet', href='css/icomoon.css')
+    link(rel='stylesheet', href='css/style.css')
   body
-    .header
+    nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light
       .container
-        nav.navbar.navbar-inverse(role='navigation')
-          .navbar-header
-            button#nav-toggle.navbar-toggle(type='button', data-toggle='collapse', data-target='#main-nav')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand.scroll-top(href='#')
-              .logo
-          // /.navbar-header
-          #main-nav.collapse.navbar-collapse
-            ul.nav.navbar-nav
-              li
-                a.scroll-top(href='#') Home
-              li
-                a.scroll-link(href='#', data-id='about') About Us
-              li
-                a.scroll-link(href='#', data-id='portfolio') Portfolio
-              li
-                a.scroll-link(href='#', data-id='blog') Blog
-              li
-                a.scroll-link(href='#', data-id='contact') Contact Us
-          // /.navbar-collapse
-          // /.navbar
-          // /.container
-          // /.header
-          section.cd-hero
-            ul.cd-hero-slider.autoplay
-              //
-                <ul class="cd-hero-slider autoplay"> for slider auto play
-                <ul class="cd-hero-slider"> for disabled auto play
-              li.selected.first-slide
-                .cd-full-width
-                  .tm-slide-content-div.slide-caption
-                    span Introduction to
-                    h2 Creative Meteor
-                    p
-                      | Phasellus interdum tortor sem. Quisque sit amet condimentum sem. Phasellus luctus, felis sit amet pulvinar luctus.
-                    .primary-button
-                      a.scroll-link(href='#', data-id='about') Discover More
-                // .cd-full-width
-              li.second-slide
-                .cd-full-width
-                  .tm-slide-content-div.slide-caption
-                    span We Are Perfect Staffs
-                    h2 Our Team Members
-                    p
-                      | Donec dolor ipsum, laoreet nec metus non, tempus elementum massa. Donec non elit rhoncus, vestibulum enim sed, rutrum arcu.
-                    .primary-button
-                      a(href='#') Read More
-                // .cd-full-width
-              li.third-slide
-                .cd-full-width
-                  .tm-slide-content-div.slide-caption
-                    span Design is a hobby
-                    h2 Responsive Layout
-                    p
-                      | Integer ut dolor eget magna congue gravida ut at arcu. Vivamus maximus neque quis luctus tempus. Vestibulum consequat.
-                    .primary-button
-                      a(href='#') View Details
-                // .cd-full-width
-                // .cd-hero-slider
-                .cd-slider-nav
-                  nav
-                    span.cd-marker.item-1
-                    ul
-                      li.selected
-                        a(href='#0')
-                      li
-                        a(href='#0')
-                      li
-                        a(href='#0')
-                // .cd-slider-nav
-                // .cd-hero
-                #about.page-section
-                  .container
-                    .row
-                      .col-md-12
-                        .section-heading
-                          h4 What We Do
-                          .line-dec
-                    .row
-                      .col-md-3.col-sm-6.col-xs-12
-                        .service-item.first-service
-                          .icon
-                          h4 Easy Customizations
-                          p
-                            | Meteor is free HTML website template by Tooplate. Feel free to use this layout for your project.
-                      .col-md-3.col-sm-6.col-xs-12
-                        .service-item.second-service
-                          .icon
-                          h4 Creative Ideas
-                          p
-                            | Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.
-                      .col-md-3.col-sm-6.col-xs-12
-                        .service-item.third-service
-                          .icon
-                          h4 Good Profit
-                          p
-                            | Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.
-                      .col-md-3.col-sm-6.col-xs-12
-                        .service-item.fourth-service
-                          .icon
-                          h4 Open To Public
-                          p
-                            | Biodiesel schltz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.
-                #what-we-do
-                  .container
-                    .row
-                      .col-md-6
-                        .left-text
-                          h4
-                            | New offers just arrived,
-                            br
-                            | Get it now and take profit.
-                          p
-                            | Gochujang pitchfork post-ironic hammock kombucha fanny pack cronut. Raw denim chicharrones semiotics af truffaut pinterest. Distillery letterpress authentic adaptogen. Meditation schlitz humblebrag photo booth celiac cliche chartreuse.
-                            br
-                            br
-                            | Pinterest 90's wolf celiac dreamcatcher listicle deep v semiotics. Intelligentsia literally meggings trust fund put a bird on it. Shoreditch crucifix artisan pug shaman twee. Health goth bicycle rights retro iPhone.
-                          ul
-                            li
-                              .white-button
-                                a.scroll-link(href='#', data-id='portfolio') Discover More
-                            li
-                              .primary-button
-                                a(href='#') Purchase Now
-                      .col-md-6
-                        .right-image
-                          img(src='img/what-we-do-right-image.png', alt='')
-                #portfolio.page-section
-                  .content-wrapper
-                    .inner-container.container
-                      .row
-                        .col-md-12
-                          .section-heading
-                            h4 Our Portfolio
-                            .line-dec
-                      .projects-holder-3
-                        .filter-categories
-                          ul.project-filter
-                            li.filter(data-filter='all')
-                              span All
-                            li.filter(data-filter='nature')
-                              span Nature
-                            li.filter(data-filter='workspace')
-                              span Workspace
-                            li.filter(data-filter='city')
-                              span City
-                            li.filter(data-filter='technology')
-                              span Technology
-                        .projects-holder
-                          .row
-                            .col-md-3.col-sm-6.project-item.mix.workspace
-                              .thumb
-                                .image
-                                  img(src='img/portfolio_01.jpg')
-                                .hover-effect
-                                  a(href='img/portfolio_big_01.jpg', data-lightbox='image-1')
-                                    i.fa.fa-search
-                            .col-md-3.col-sm-6.project-item.mix.workspace
-                              .thumb
-                                .image
-                                  img(src='img/portfolio_02.jpg')
-                                .hover-effect
-                                  a(href='img/portfolio_big_02.jpg', data-lightbox='image-1')
-                                    i.fa.fa-search
-                            .col-md-3.col-sm-6.project-item.mix.technology
-                              .thumb
-                                .image
-                                  img(src='img/portfolio_03.jpg')
-                                .hover-effect
-                                  a(href='img/portfolio_big_03.jpg', data-lightbox='image-1')
-                                    i.fa.fa-search
-                            .col-md-3.col-sm-6.project-item.mix.city
-                              .thumb
-                                .image
-                                  img(src='img/portfolio_04.jpg')
-                                .hover-effect
-                                  a(href='img/portfolio_big_04.jpg', data-lightbox='image-1')
-                                    i.fa.fa-search
-                            .col-md-3.col-sm-6.project-item.mix.nature
-                              .thumb
-                                .image
-                                  img(src='img/portfolio_05.jpg')
-                                .hover-effect
-                                  a(href='img/portfolio_big_05.jpg', data-lightbox='image-1')
-                                    i.fa.fa-search
-                            .col-md-3.col-sm-6.project-item.mix.technology
-                              .thumb
-                                .image
-                                  img(src='img/portfolio_06.jpg')
-                                .hover-effect
-                                  a(href='img/portfolio_big_06.jpg', data-lightbox='image-1')
-                                    i.fa.fa-search
-                            .col-md-3.col-sm-6.project-item.mix.workspace
-                              .thumb
-                                .image
-                                  img(src='img/portfolio_07.jpg')
-                                .hover-effect
-                                  a(href='img/portfolio_big_07.jpg', data-lightbox='image-1')
-                                    i.fa.fa-search
-                            .col-md-3.col-sm-6.project-item.mix.city
-                              .thumb
-                                .image
-                                  img(src='img/portfolio_08.jpg')
-                                .hover-effect
-                                  a(href='img/portfolio_big_08.jpg', data-lightbox='image-1')
-                                    i.fa.fa-search
-                #blog.page-section
-                  .container
-                    .row
-                      .col-md-12
-                        .section-heading
-                          h4 Our Blog Posts
-                          .line-dec
-                    .row
-                      .col-md-6
-                        .blog-item.b1
-                          .thumb
-                            img(src='img/blog_01.jpg', alt='')
-                            .text-content
-                              h4 Delecioius Food Served
-                              span
-                                | Posted: 
-                                em George
-                                |   /  Date: 
-                                em 11 Aug 2017
-                                |   /  Category: 
-                                em Design
-                      .col-md-6
-                        .blog-item.second-blog.b2
-                          .thumb
-                            img(src='img/blog_02.jpg', alt='')
-                            .text-content
-                              h4 Creative & Clean Workspace
-                              span
-                                | Posted: 
-                                em Kerley
-                                |   /  Date: 
-                                em 24 Jul 2017
-                                |   /  Category: 
-                                em Artwork
-                      .col-md-6
-                        .blog-item.b3
-                          .thumb
-                            img(src='img/blog_03.jpg', alt='')
-                            .text-content
-                              h4 Crashed Plane Captured
-                              span
-                                | Posted: 
-                                em Johnny
-                                |   /  Date: 
-                                em 16 Jul 2017
-                                |   /  Category: 
-                                em Branding
-                    .row
-                      .col-md-12
-                        .pop
-                          span ✖
-                          p
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis neque lacinia, porta nulla in, pellentesque ante. Vivamus in luctus mauris, non pharetra nibh. Morbi porttitor nisl sit amet velit pellentesque consequat. Etiam blandit libero turpis, id vehicula leo posuere a. In vel massa sollicitudin, tincidunt massa et, tincidunt ex.
-                            br
-                            br
-                            | Duis volutpat condimentum mollis. Sed eleifend libero ut viverra mattis. Suspendisse consectetur diam dolor, ut efficitur sem finibus vel. Vivamus tristique lacus sed dapibus varius. Fusce pharetra, quam quis congue pretium, ante dui imperdiet ipsum, eget lobortis leo leo sed diam.
-                        .pop2
-                          span ✖
-                          p
-                            | Praesent purus leo, aliquet et efficitur id, pulvinar scelerisque enim. Maecenas a arcu sagittis, ornare ante ut, suscipit lectus. Donec dolor ipsum, laoreet nec metus non, tempus elementum massa. Donec non elit rhoncus, vestibulum enim sed, rutrum arcu. Vestibulum et purus ac diam condimentum volutpat sed ac est. Phasellus interdum tortor sem. Quisque sit amet condimentum sem. Phasellus luctus, felis sit amet pulvinar luctus, lectus dui mattis tellus, et placerat nunc ante at lacus.
-                            br
-                            br
-                            | Vivamus vestibulum, nisi sed placerat accumsan, felis felis venenatis tortor, vel condimentum arcu neque vel mauris. Donec a magna gravida, egestas libero non, molestie massa. Integer ut dolor eget magna congue gravida ut at arcu. Vivamus maximus neque quis luctus tempus. Vestibulum consequat a justo id feugiat.
-                        .pop3
-                          span ✖
-                          p
-                            | Nullam rhoncus, orci et iaculis sodales, quam lectus suscipit augue, ut auctor massa dolor id metus. Nulla porta ut diam sodales dignissim. Ut sit amet augue vel justo laoreet dignissim. Maecenas vitae sollicitudin eros. In commodo placerat cursus. Quisque malesuada, nisl ac lacinia commodo, justo eros maximus ex, quis cursus odio erat at neque. Sed tincidunt eu dolor eget posuere.
-                            br
-                            br
-                            | Curabitur sit amet elit sit amet ligula eleifend aliquam quis eget quam. Mauris id mi nec justo venenatis tincidunt at ac massa. Sed et volutpat nunc. Quisque at urna quam. Duis sit amet neque eget quam iaculis iaculis. Quisque maximus porta elementum. Nam ac mattis erat, quis accumsan odio.
-                #fun-facts
-                  .container
-                    .row
-                      .col-md-3.col-sm-6.col-xs-12
-                        .fact-item
-                          .counter(data-count='926') 0
-                          span Regular Visitors
-                      .col-md-3.col-sm-6.col-xs-12
-                        .fact-item
-                          .counter(data-count='214') 0
-                          span Finished Projects
-                      .col-md-3.col-sm-6.col-xs-12
-                        .fact-item
-                          .counter(data-count='118') 0
-                          span Happy Clients
-                      .col-md-3.col-sm-6.col-xs-12
-                        .fact-item
-                          .counter(data-count='16') 0
-                          span Total Awards
-                #contact.page-section
-                  .container
-                    .row
-                      .col-md-12
-                        .section-heading
-                          h4 Contact Us
-                          .line-dec
-                    .row
-                      .col-md-6
-                        .map
-                          img(src='img/map.jpg', alt='')
-                      .col-md-6
-                        .row
-                          form#contact(action='', method='post')
-                            .col-md-6
-                              fieldset
-                                input#name.form-control(name='name', type='text', placeholder='Your name...', required='')
-                            .col-md-6
-                              fieldset
-                                input#email.form-control(name='email', type='email', placeholder='Your email...', required='')
-                            .col-md-12
-                              fieldset
-                                textarea#message.form-control(name='message', rows='6', placeholder='Your message...', required='')
-                            .col-md-12
-                              fieldset
-                                button#form-submit.btn(type='submit') Send Message
-                footer
-                  .container
-                    .row
-                      .col-md-6
-                        .copyright-text
-                          p
-                            | Copyright © 2017 Company Name
-                            | - Design: Tooplate
-                      .col-md-6
-                        .social-icons
-                          ul
-                            li
-                              a(href='#')
-                                i.fa.fa-facebook
-                            li
-                              a(href='#')
-                                i.fa.fa-twitter
-                            li
-                              a(href='#')
-                                i.fa.fa-linkedin
-                            li
-                              a(href='#')
-                                i.fa.fa-rss
-                            li
-                              a(href='#')
-                                i.fa.fa-dribbble
-                script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
-                script.
-                  window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\\/script>')
-                script(src='js/vendor/bootstrap.min.js')
-                script(src='js/plugins.js')
-                script(src='js/main.js')
-                script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', type='text/javascript')
-                script(type='text/javascript').
-                  $(document).ready(function() {
-                  // navigation click actions
-                  $('.scroll-link').on('click', function(event){
-                  event.preventDefault();
-                  var sectionID = $(this).attr("data-id");
-                  scrollToID('#' + sectionID, 750);
-                  });
-                  // scroll to top action
-                  $('.scroll-top').on('click', function(event) {
-                  event.preventDefault();
-                  $('html, body').animate({scrollTop:0}, 'slow');
-                  });
-                  // mobile nav toggle
-                  $('#nav-toggle').on('click', function (event) {
-                  event.preventDefault();
-                  $('#main-nav').toggleClass("open");
-                  });
-                  });
-                  // scroll function
-                  function scrollToID(id, speed){
-                  var offSet = 50;
-                  var targetOffset = $(id).offset().top - offSet;
-                  var mainNav = $('#main-nav');
-                  $('html,body').animate({scrollTop:targetOffset}, speed);
-                  if (mainNav.hasClass("open")) {
-                  mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-                  mainNav.removeClass("open");
-                  }
-                  }
-                  if (typeof console === "undefined") {
-                  console = {
-                  log: function() { }
-                  };
-                  }
+        a.navbar-brand(href='index.html')
+          | Aid
+          span .
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#ftco-nav', aria-controls='ftco-nav', aria-expanded='false', aria-label='Toggle navigation')
+          span.oi.oi-menu
+          |  Menu
+        #ftco-nav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='index.html') Home
+            li.nav-item
+              a.nav-link(href='about.html') Who we are
+            li.nav-item
+              a.nav-link(href='causes.html') Causes
+            li.nav-item
+              a.nav-link(href='blog.html') Stories
+            li.nav-item
+              a.nav-link(href='contact.html') Contact
+    // END nav
+    .hero-wrap(style="background-image: url('images/bg_1.jpg');", data-stellar-background-ratio='0.5')
+      .overlay
+      .container
+        .row.no-gutters.slider-text.align-items-center.justify-content-end(data-scrollax-parent='true')
+          .col-md-6.order-md-last.ftco-animate.mt-5(data-scrollax=" properties: { translateY: '70%' }")
+            h1.mb-4(data-scrollax="properties: { translateY: '30%', opacity: 1.6 }") We can help to save the world
+            p
+              a.btn.btn-black.py-3.px-4(href='#') How Can I Help
+          .col-md-6.d-none.d-md-block
+            .play-video.pb-5.d-flex.align-items-center
+              p
+                a.popup-vimeo(href='https://vimeo.com/45830194')
+                  span.icon
+                    i.ion-ios-play
+                  span.play Play video
+    section.ftco-section.ftco-no-pt.ftco-no-pb.ftco-volunteer
+      .container
+        .row
+          .col-md-7.img-volunteer(style='background-image: url(images/about.jpg);')
+            .row.no-gutters.justify-content-end
+              .col-lg-7
+                .text.py-5.pl-md-4.pr-md-3
+                  h2.mb-4 We need volunteers in Africa
+                  p
+                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+                  p
+                    a.btn.btn-primary.py-3.px-4(href='#') Join now
+          .col-md-5.d-flex.align-items-center.bg-black
+            .about-text.py-5.pl-md-5
+              h2
+                | Donation so far 
+                span $
+                strong.number(data-number='380000') 0
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+              p
+                a.btn.btn-black.py-3.px-4(href='#') Donate now
+    section.services-section.py-5.py-md-0.bg-light
+      .container
+        .row.no-gutters.d-flex
+          .col-md-6.col-lg-3.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.d-block
+              .icon
+                span.flaticon-charity
+              .media-body
+                h3.heading.mb-3 Help & Support
+                p 	203 Fake St. Mountain View, San Francisco, California, USA
+          .col-md-6.col-lg-3.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.d-block
+              .icon
+                span.flaticon-adoption
+              .media-body
+                h3.heading.mb-3 Adoption
+                p A small river named Duden flows by their place and supplies.
+          .col-md-6.col-lg-3.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.active.d-block
+              .icon
+                span.flaticon-volunteer
+              .media-body
+                h3.heading.mb-3 Volunteering
+                p A small river named Duden flows by their place and supplies.
+          .col-md-6.col-lg-3.d-flex.align-self-stretch.ftco-animate
+            .media.block-6.services.d-block
+              .icon
+                span.flaticon-open-book
+              .media-body
+                h3.heading.mb-3 Education
+                p A small river named Duden flows by their place and supplies.
+    section.ftco-section.ftco-causes
+      .container
+        .row.justify-content-center.pb-3
+          .col-md-10.heading-section.text-center.ftco-animate
+            h2.mb-4 Let's build the world without child abuse and neglect
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+      .container
+        .row
+          .col-md-12
+            .carousel-causes.owl-carousel
+              .item
+                a.causes.text-center(href='causes.html')
+                  .img(style='background-image: url(images/causes-1.jpg);')
+                  h2 Adoption, Fostering & Children Care
+              .item
+                a.causes.text-center(href='causes.html')
+                  .img(style='background-image: url(images/causes-2.jpg);')
+                  h2 Disadvantages Young People
+              .item
+                a.causes.text-center(href='causes.html')
+                  .img(style='background-image: url(images/causes-3.jpg);')
+                  h2 Meditation & Crisis Services
+              .item
+                a.causes.text-center(href='causes.html')
+                  .img(style='background-image: url(images/causes-4.jpg);')
+                  h2 Providing Children Care and Education
+              .item
+                a.causes.text-center(href='causes.html')
+                  .img(style='background-image: url(images/causes-5.jpg);')
+                  h2 Safeguarding & Consultancy Services
+    section.testimony-section
+      .container
+        .row.ftco-animate.justify-content-center
+          .col-md-6.d-flex
+            .testimony-img(style='background-image: url(images/testimony-img.png);')
+          .col-md-6.py-5
+            .heading-section.heading-section-white.pt-4.ftco-animate
+              h2.mb-0 Success Stories
+            .carousel-testimony.owl-carousel.ftco-owl
+              .item
+                .testimony-wrap.pb-4
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  .d-flex
+                    .user-img(style='background-image: url(images/person_1.jpg)')
+                    .pos.ml-3
+                      p.name Jeff Nucci
+                      span.position Businessman
+              .item
+                .testimony-wrap.pb-4
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  .d-flex
+                    .user-img(style='background-image: url(images/person_1.jpg)')
+                    .pos.ml-3
+                      p.name Jeff Nucci
+                      span.position Businessman
+              .item
+                .testimony-wrap.pb-4
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  .d-flex
+                    .user-img(style='background-image: url(images/person_1.jpg)')
+                    .pos.ml-3
+                      p.name Jeff Nucci
+                      span.position Businessman
+              .item
+                .testimony-wrap.pb-4
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  .d-flex
+                    .user-img(style='background-image: url(images/person_1.jpg)')
+                    .pos.ml-3
+                      p.name Jeff Nucci
+                      span.position Businessman
+              .item
+                .testimony-wrap.pb-4
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  .d-flex
+                    .user-img(style='background-image: url(images/person_1.jpg)')
+                    .pos.ml-3
+                      p.name Jeff Nucci
+                      span.position Businessman
+    footer.ftco-footer.ftco-section
+      .container
+        .row.mb-5
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Aid.
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+              ul.ftco-footer-social.list-unstyled.float-md-left.float-lft.mt-5
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-twitter
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-facebook
+                li.ftco-animate
+                  a(href='#')
+                    span.icon-instagram
+          .col-md
+            .ftco-footer-widget.mb-4.ml-md-5
+              h2.ftco-heading-2 Information
+              ul.list-unstyled
+                li
+                  a.py-2.d-block(href='#') Donation
+                li
+                  a.py-2.d-block(href='#') Privacy
+                li
+                  a.py-2.d-block(href='#') Terms Condition
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Links
+              ul.list-unstyled
+                li
+                  a.py-2.d-block(href='#') Home
+                li
+                  a.py-2.d-block(href='#') Who we are
+                li
+                  a.py-2.d-block(href='#') Causes
+                li
+                  a.py-2.d-block(href='#') Blog
+                li
+                  a.py-2.d-block(href='#') Contact
+          .col-md
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Have a Questions?
+              .block-23.mb-3
+                ul
+                  li
+                    span.icon.icon-map-marker
+                    span.text 203 Fake St. Mountain View, San Francisco, California, USA
+                  li
+                    a(href='#')
+                      span.icon.icon-phone
+                      span.text +2 392 3929 210
+                  li
+                    a(href='#')
+                      span.icon.icon-envelope
+                      span.text info@yourdomain.com
+        .row
+          .col-md-12.text-center
+            p
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              | Copyright ©
+              script.
+                document.write(new Date().getFullYear());
+              |  All rights reserved | This template is made with 
+              i.icon-heart.color-danger(aria-hidden='true')
+              |  by 
+              a(href='https://colorlib.com', target='_blank') Colorlib
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              // loader
+              #ftco-loader.show.fullscreen
+                svg.circular(width='48px', height='48px')
+                  circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
+                  circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#F96D00')
+              script(src='js/jquery.min.js')
+              script(src='js/jquery-migrate-3.0.1.min.js')
+              script(src='js/popper.min.js')
+              script(src='js/bootstrap.min.js')
+              script(src='js/jquery.easing.1.3.js')
+              script(src='js/jquery.waypoints.min.js')
+              script(src='js/jquery.stellar.min.js')
+              script(src='js/owl.carousel.min.js')
+              script(src='js/jquery.magnific-popup.min.js')
+              script(src='js/aos.js')
+              script(src='js/jquery.animateNumber.min.js')
+              script(src='js/scrollax.min.js')
+              script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+              script(src='js/google-map.js')
+              script(src='js/main.js')
