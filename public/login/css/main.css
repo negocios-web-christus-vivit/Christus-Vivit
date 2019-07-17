@@ -61,7 +61,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #a64bf4;
+  color: #2170ff;
 }
 
 /*---------------------------------------------*/
@@ -199,7 +199,7 @@ iframe {
   display: block;
   font-family: Poppins-Bold;
   font-size: 39px;
-  color: #333333;
+  color: #f7882f;
   line-height: 1.2;
   text-align: center;
 }
@@ -294,11 +294,11 @@ iframe {
 }
 
 .input100:focus + .focus-input100::after {
-  color: #a64bf4;
+  color: #2170ff;
 }
 
 .has-val.input100 + .focus-input100::after {
-  color: #a64bf4;
+  color: #2170ff;
 }
 
 
@@ -336,10 +336,10 @@ iframe {
   width: 300%;
   height: 100%;
   background: #a64bf4;
-  background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -webkit-linear-gradient(right, #00dbde, #fac231, #00dbde, #fac231);
+  background: -o-linear-gradient(right, #00dbde, #fac231, #00dbde, #fac231);
+  background: -moz-linear-gradient(right, #00dbde, #fac231, #00dbde, #fac231);
+  background: linear-gradient(right, #00dbde, #fac231, #00dbde, #fac231);
   top: 0;
   left: -100%;
 
