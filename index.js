@@ -6,6 +6,9 @@ const routes = require('./routes');
 const path = require('path');
 // Importar los módulos para utilizar body parser
 const bodyParser = require('body-parser');
+// Importar los módulos para utilizar passport
+const passport = require('passport')
+
 
 // Crear la conexión con la Base de Datos
 const db = require('./config/db');
@@ -16,6 +19,9 @@ const helpers = require('./helpers');
 // Importar los modelos
 require('./models/Articulo');
 require('./models/User');
+
+//Configuracion de passport
+require ('./config/passport')(passport);
 
 // Realizar la conexión
 // Sequelize se conecta mediante promises
@@ -30,6 +36,11 @@ const app = express();
 
 // Desde dónde se cargan los archivos estáticos
 app.use(express.static('public'));
+
+// requerido para iniciar passport
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 // Habilitar Pug como nuestro Template Engine
 app.set('view engine', 'pug');
