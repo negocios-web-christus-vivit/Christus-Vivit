@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='es')
   head
     title Christus Vivit
     meta(charset='utf-8')
@@ -29,7 +29,9 @@ html(lang='en')
         #ftco-nav.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item.active
-              a.nav-link(href='index.html') Inicio
+              a.nav-link(href='index.pug') Inicio
+            li.nav-item
+              a.nav-link(href='login.pug') Iniciar Sesión
             li.nav-item
               a.nav-link(href='about.html') Quiénes somos
             li.nav-item
@@ -129,120 +131,26 @@ html(lang='en')
       .container
         .row.ftco-animate.justify-content-center
           .col-md-6.d-flex
-            .testimony-img(style='background-image: url(images/testimony-img.png);')
+            .testimony-img(style='background-image: url(images/PapaJovenes.jpg);')
           .col-md-6.py-5
             .heading-section.heading-section-white.pt-4.ftco-animate
-              h2.mb-0 Success Stories
+              h2.mb-0 Acerca de la Enciclíca
             .carousel-testimony.owl-carousel.ftco-owl
               .item
                 .testimony-wrap.pb-4
                   .text
                     p.mb-4
-                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                  .d-flex
-                    .user-img(style='background-image: url(images/person_1.jpg)')
-                    .pos.ml-3
-                      p.name Jeff Nucci
-                      span.position Businessman
-              .item
-                .testimony-wrap.pb-4
-                  .text
+                      | Fecha de publicación: 2 de abril de 2019. Autor: Francisco, Francesco (Jorge Mario Bergoglio)
                     p.mb-4
-                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                      | Lee la Encíclica: a(href="https://opusdei.org/es-hn/article/christus-vivit-cristo-vive-sinodo-jovenes-exhortacion-apostolica-papa-francisco/")
+                    
+                      
                   .d-flex
-                    .user-img(style='background-image: url(images/person_1.jpg)')
-                    .pos.ml-3
-                      p.name Jeff Nucci
-                      span.position Businessman
-              .item
-                .testimony-wrap.pb-4
-                  .text
-                    p.mb-4
-                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                  .d-flex
-                    .user-img(style='background-image: url(images/person_1.jpg)')
-                    .pos.ml-3
-                      p.name Jeff Nucci
-                      span.position Businessman
-              .item
-                .testimony-wrap.pb-4
-                  .text
-                    p.mb-4
-                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                  .d-flex
-                    .user-img(style='background-image: url(images/person_1.jpg)')
-                    .pos.ml-3
-                      p.name Jeff Nucci
-                      span.position Businessman
-              .item
-                .testimony-wrap.pb-4
-                  .text
-                    p.mb-4
-                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                  .d-flex
-                    .user-img(style='background-image: url(images/person_1.jpg)')
-                    .pos.ml-3
-                      p.name Jeff Nucci
-                      span.position Businessman
+                    
+              
     footer.ftco-footer.ftco-section
       .container
-        .row.mb-5
-          .col-md
-            .ftco-footer-widget.mb-4
-              h2.ftco-heading-2 Aid.
-              p
-                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-              ul.ftco-footer-social.list-unstyled.float-md-left.float-lft.mt-5
-                li.ftco-animate
-                  a(href='#')
-                    span.icon-twitter
-                li.ftco-animate
-                  a(href='#')
-                    span.icon-facebook
-                li.ftco-animate
-                  a(href='#')
-                    span.icon-instagram
-          .col-md
-            .ftco-footer-widget.mb-4.ml-md-5
-              h2.ftco-heading-2 Information
-              ul.list-unstyled
-                li
-                  a.py-2.d-block(href='#') Donation
-                li
-                  a.py-2.d-block(href='#') Privacy
-                li
-                  a.py-2.d-block(href='#') Terms Condition
-          .col-md
-            .ftco-footer-widget.mb-4
-              h2.ftco-heading-2 Links
-              ul.list-unstyled
-                li
-                  a.py-2.d-block(href='#') Home
-                li
-                  a.py-2.d-block(href='#') Who we are
-                li
-                  a.py-2.d-block(href='#') Causes
-                li
-                  a.py-2.d-block(href='#') Blog
-                li
-                  a.py-2.d-block(href='#') Contact
-          .col-md
-            .ftco-footer-widget.mb-4
-              h2.ftco-heading-2 Have a Questions?
-              .block-23.mb-3
-                ul
-                  li
-                    span.icon.icon-map-marker
-                    span.text 203 Fake St. Mountain View, San Francisco, California, USA
-                  li
-                    a(href='#')
-                      span.icon.icon-phone
-                      span.text +2 392 3929 210
-                  li
-                    a(href='#')
-                      span.icon.icon-envelope
-                      span.text info@yourdomain.com
-        .row
+        
           .col-md-12.text-center
             p
               // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
