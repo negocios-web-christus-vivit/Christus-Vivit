@@ -1,7 +1,10 @@
 
 const User = require('../models/user');
 const bcrypt = require('bcryptjs');
+const passport = require('passport');
+
 const { body } = require('express-validator');
+
 
 exports.UserRegistration  = async (req, res) => {
     // Obtener todos los proyectos
@@ -19,8 +22,11 @@ exports.UserLogin  = async (req, res) => {
 
 
 exports.UserValidation  = async (req, res) => {
-    // Obtener todos los proyectos
-    // const articulo = await Articulo.findAll();
+    passport.authenticate('local', {
+        succesRedirect:'/',
+        failureRedirect:'/login',
+        failureFlash: true
+    })(req, res, next);
 
     res.render('login');
 };
@@ -64,7 +70,7 @@ exports.GuardarUsuario  = async (req, res) => {
                 
                 await User.create({name: newUser.name, email: newUser.email, username: newUser.username, password: newUser.password});
 
-                res.redirect('/');
+                res.redirect('/login');
             });
 
         });
