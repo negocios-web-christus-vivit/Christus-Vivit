@@ -1,6 +1,7 @@
 //express router
 const express = require('express');
 const router = express.Router();
+const passport = require('passport');
 
 // Importar express-validator
 const { body } = require('express-validator');
@@ -22,6 +23,7 @@ module.exports = function () {
 
     // Rutas de articulos
     router.get('/', articulosController.articulosHome);
+    router.get('/wysiwyg', articulosController.wysiwyg);
 
 
     // Rutas de User
@@ -30,7 +32,10 @@ module.exports = function () {
         body('password').not().isEmpty(), body('password2').equals('password'), userController.GuardarUsuario);
 
     router.get('/login', userController.UserLogin);
-    router.post('/login', body('username').not().isEmpty(),body('password').not().isEmpty(), userController.UserValidation);
+    router.post('/login', passport.authenticate('local', { successRedirect: '/',
+    failureRedirect: '/login',
+    failureFlash: true }));
+
 
 
 

@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Crear Articulo
+    script(src='js/ckeditor.js')
+  body
+    h1 Classic editor
+    textarea#editor(name='content')
+      | <p>This is some sample content.</p>
+    script.
+      ClassicEditor
+      .create( document.querySelector( '#editor' ) )
+      .catch( error => {
+      console.error( error );
+      } );
+
+

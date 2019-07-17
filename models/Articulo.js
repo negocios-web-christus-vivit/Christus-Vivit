@@ -19,6 +19,14 @@ const Articulo = db.define('articulo', {
         type: Sequelize.STRING
     },
 
+    cuerpo : {
+        type: Sequelize.STRING
+    },
+    
+    autor : {
+        type: Sequelize.STRING
+    },
+
     url : Sequelize.STRING
 }, {
     hooks : {
