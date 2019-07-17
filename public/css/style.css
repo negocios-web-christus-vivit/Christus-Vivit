@@ -8337,7 +8337,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
-      color: #000000 !important; }
+      color: #f7882f !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #ffb400 !important; }
     .ftco-navbar-light.scrolled.awake {
@@ -8350,7 +8350,7 @@ h1, h2, h3, h4, h5,
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
-      color: #fac231; }
+      color: #f7882f; }
 
 .navbar-brand {
   font-weight: 900;
@@ -8960,7 +8960,7 @@ textarea.form-control {
     background-position: top center; }
     @media (min-width: 992px) {
       .testimony-section .testimony-img {
-        margin-top: -150px; } }
+        margin-top: -90px; } }
   .testimony-section .overlay {
     position: absolute;
     top: 0;
