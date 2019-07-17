@@ -8202,7 +8202,7 @@ h1, h2, h3, h4, h5,
           .ftco-navbar-light.ftco-navbar-light-2 .navbar-nav > .nav-item > .nav-link:hover {
             color: #fff; } }
     .ftco-navbar-light.ftco-navbar-light-2 .navbar-nav > .nav-item.active > a {
-      color: #ffb400; }
+      color: #2170ff; }
       @media (max-width: 991.98px) {
         .ftco-navbar-light.ftco-navbar-light-2 .navbar-nav > .nav-item.active > a {
           color: #fff; } }
@@ -8210,7 +8210,7 @@ h1, h2, h3, h4, h5,
     color: #fff;
     z-index: 0; }
     .ftco-navbar-light .navbar-brand span {
-      color: #ffb400; }
+      color: #2170ff; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
       color: #fff; }
     @media (max-width: 991.98px) {
@@ -8220,7 +8220,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 18px;
+    font-size: 28px;
     padding-top: 1.8rem;
     padding-bottom: 1.8rem;
     padding-left: 20px;
@@ -8229,7 +8229,7 @@ h1, h2, h3, h4, h5,
     color: #fff;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #ffb400; }
+      color: #2170ff; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
@@ -8280,7 +8280,7 @@ h1, h2, h3, h4, h5,
         color: #fff;
         background: #ffb400; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #ffb400; }
+    color: #2170ff; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item.active > a {
         color: #fff; } }
@@ -8350,7 +8350,7 @@ h1, h2, h3, h4, h5,
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
-      color: #000000; }
+      color: #fac231; }
 
 .navbar-brand {
   font-weight: 900;
@@ -8392,8 +8392,8 @@ h1, h2, h3, h4, h5,
 .slider-text {
   position: relative;
   height: 800px; }
-  .slider-text h1 {
-    font-size: 54px;
+  .slider-text h1 { 
+    font-size: 40px;
     color: #fff;
     line-height: 1.2;
     font-weight: 900;
@@ -8401,7 +8401,7 @@ h1, h2, h3, h4, h5,
     letter-spacing: 5px; }
     @media (max-width: 991.98px) {
       .slider-text h1 {
-        font-size: 40px; } }
+        font-size: 30px; } }
   .slider-text p {
     font-size: 20px;
     line-height: 1.5;

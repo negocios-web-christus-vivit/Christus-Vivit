@@ -2,7 +2,7 @@
 const Sequilize = require('sequelize');
 
 // Establecer los paremetros de la base de datos
-const db = new Sequilize('ChristusVivit', 'root', '', {
+const db = new Sequilize('ChristusVivit', 'NegociosWeb', 'brtNUgGZg9c6TSm', {
 
     host: 'localhost',
     dialect: 'mysql',
