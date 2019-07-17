@@ -7,3 +7,7 @@ exports.articulosHome = async (req, res) => {
 
     res.render('index');
 };
+
+exports.wysiwyg = function(req, res){
+    res.render('wysiwyg');
+}

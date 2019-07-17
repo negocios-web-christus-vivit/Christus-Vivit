@@ -21,19 +21,12 @@ exports.UserLogin  = async (req, res) => {
 };
 
 
-exports.UserValidation  = async (req, res) => {
-    passport.authenticate('local', {
-        succesRedirect:'/',
-        failureRedirect:'/login',
-        failureFlash: true
-    })(req, res, next);
-
-    res.render('login');
+exports.UserValidation  = function (req, res) {
+    res.redirect('/', { user : req.user.username});
 };
 
 
 exports.GuardarUsuario  = async (req, res) => {
-    console.log('entro');
     // Obtener todos los proyectos
     // const articulo = await Articulo.findAll();
 

@@ -18,7 +18,11 @@
   "homepage": "https://github.com/negocios-web-christus-vivit/Christus-Vivit#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "ckeditor": "^4.12.1",
+    "connect-flash": "^0.1.1",
     "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.16.2",
     "express-validator": "^6.0.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
