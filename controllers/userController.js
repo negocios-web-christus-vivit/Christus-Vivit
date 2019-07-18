@@ -30,14 +30,13 @@ exports.GuardarUsuario  = async (req, res) => {
     // Obtener todos los proyectos
     // const articulo = await Articulo.findAll();
 
-    const name = req.body.name;
     const email = req.body.email;
     const username = req.body.username;
     const password = req.body.password;
     console.log(name)
     let errores = [];
     
-    if (!name && !email && !username && !password) {
+    if (!email && !username && !password) {
         errores.push({'texto': 'Se encotraron errores'});
     }
    
@@ -47,7 +46,6 @@ exports.GuardarUsuario  = async (req, res) => {
 
     }else{
         let newUser = new User({
-            name:name,
             email:email,
             username:username,
             password:password
@@ -61,7 +59,7 @@ exports.GuardarUsuario  = async (req, res) => {
 
                 newUser.password = hash;
                 
-                await User.create({name: newUser.name, email: newUser.email, username: newUser.username, password: newUser.password});
+                await User.create({email: newUser.email, username: newUser.username, password: newUser.password});
 
                 res.redirect('/login');
             });

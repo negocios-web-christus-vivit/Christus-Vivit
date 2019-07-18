@@ -3,15 +3,12 @@ const Sequelize = require('sequelize');
 // Importar la configuración de la conexión con la BD
 const db = require('../config/db');
 
+const Articulo = require('./Articulo')
+
 const slug = require('slug');
 
 // Definición del modelo (Model)
 const Usuario = db.define('usuario', {
-    name : {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-
     email : {
         type: Sequelize.STRING,
         allowNull: false
@@ -27,7 +24,10 @@ const Usuario = db.define('usuario', {
         type: Sequelize.STRING,
         allowNull: false
     }
+
 });
+
+Usuario.hasMany(Articulo);
 
 // Importar el modelo para poder utilizarlo
 module.exports = Usuario;

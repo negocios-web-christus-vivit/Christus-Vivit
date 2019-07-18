@@ -1,5 +1,5 @@
 // Importar los modelos
-// const Articulo = require('./models/Articulo');
+const Articulo = require('../models/Articulo');
 
 exports.articulosHome = async (req, res) => {
     // Obtener todos los proyectos
@@ -10,4 +10,8 @@ exports.articulosHome = async (req, res) => {
 
 exports.wysiwyg = function(req, res){
     res.render('wysiwyg');
+}
+
+exports.nuevoArticulo = async (req, res) => {
+
 }
