@@ -1,0 +1,10 @@
+extends ./articulos
+
+block contenido
+    script(src='/js/ckeditor.js')
+    if(articulo)
+        h1 #{articulo.nombre}
+        p !{articulo.cuerpo} 
+            
+            
+    

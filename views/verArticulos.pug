@@ -1,0 +1,12 @@
+extends ./articulos
+
+block contenido
+    if (articulos)
+        each articulo in articulos
+            li     
+                a.articulosText(href=`/articulo/${articulo.url}`) #{articulo.nombre}
+                
+
+            
+    
+            

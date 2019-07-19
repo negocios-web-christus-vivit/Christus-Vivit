@@ -4,7 +4,7 @@
   "description": "Proyecto de segundo parcial de la clase de Negocios Web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,22 @@
   },
   "homepage": "https://github.com/negocios-web-christus-vivit/Christus-Vivit#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ckeditor": "^4.12.1",
+    "connect-flash": "^0.1.1",
     "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.16.2",
     "express-validator": "^6.0.1",
+    "html2pug": "^4.0.0",
+    "marked": "^0.7.0",
     "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "pug": "^2.0.4",
-    "sequelize": "^5.9.2"
+    "sequelize": "^5.9.2",
+    "shortid": "^2.2.14",
+    "slug": "^1.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
