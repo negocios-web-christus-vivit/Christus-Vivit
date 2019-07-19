@@ -6,7 +6,7 @@ const db = new Sequilize('ChristusVivit', 'NegociosWeb', 'brtNUgGZg9c6TSm', {
 
     host: 'localhost',
     dialect: 'mysql',
-    pool: '3306',
+    port: '3306',
     operatorsAliases: false,
 
     define: {
