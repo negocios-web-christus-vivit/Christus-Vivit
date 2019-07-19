@@ -21,11 +21,9 @@ exports.ariculosHome2 = async(req, res) =>{
 
     const [articulos] = await Promise.all([articulosPromise]).then();
     
-    const text = "figure.media oembed(url='https://www.youtube.com/watch?v=A0S3Wy0ofZg')";
     res.render('verArticulos',{
         articulos,
-        markdown,
-        text
+        markdown
     });
 }
 exports.nuevoArticulo = async (req, res) => {
@@ -63,7 +61,7 @@ exports.articuloPorUrl = async (req, res) => {
 
     const [articulo] = await Promise.all([articulosPromise]).then();
     
-    res.render('verArticuloIndividual',{
+    res.render('articulo',{
         articulo
     });
 
