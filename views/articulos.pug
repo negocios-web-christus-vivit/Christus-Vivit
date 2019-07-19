@@ -27,7 +27,7 @@ html(lang='es')
           span Vivit
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#ftco-nav', aria-controls='ftco-nav', aria-expanded='false', aria-label='Toggle navigation')
           span.oi.oi-menu
-          |  Menu
+          |  Menú
         #ftco-nav.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item.active
@@ -35,16 +35,16 @@ html(lang='es')
 
             if user
               li.nav-item
-                a.nav-link(href='/ver_articulos') Articulos
+                a.nav-link(href='/ver_articulos') Artículos
               li.nav-item
-                a.nav-link(href='/crear_articulos') Crear Articulo
+                a.nav-link(href='/crear_articulos') Crear artículo
               li.nav-item
-                a.nav-link(href='/logout') Cerrar Sesión
+                a.nav-link(href='/logout') Cerrar sesión
             else
               li.nav-item
-                a.nav-link(href='/ver_articulos') Articulos
+                a.nav-link(href='/ver_articulos') Artículos
               li.nav-item
-                a.nav-link(href='/login') Iniciar Sesión
+                a.nav-link(href='/login') Iniciar sesión
     // END nav
     .hero-wrap(style="background-image: url('/images/bg_1.jpg');", data-stellar-background-ratio='0.5')
       .overlay
@@ -77,15 +77,12 @@ html(lang='es')
         
           .col-md-12.text-center
             p
-              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+             
               | Copyright ©
               script.
                 document.write(new Date().getFullYear());
-              |  Todos los derechos reservados | Universidad Catolica de Honduras | JS |
-              br
-              a(href='https://colorlib.com', target='_blank') Colorlib
-              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
-              // loader
+              |  Todos los derechos reservados | Universidad Catolica de Honduras | Negocios Web | 2019
+              
               #ftco-loader.show.fullscreen
                 svg.circular(width='48px', height='48px')
                   circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
