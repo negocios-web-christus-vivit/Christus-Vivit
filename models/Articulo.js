@@ -16,11 +16,11 @@ const Articulo = db.define('articulo', {
     },
 
     nombre : {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(200)
     },
 
     cuerpo : {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(8000)
     },
     url : Sequelize.STRING
 }, {
