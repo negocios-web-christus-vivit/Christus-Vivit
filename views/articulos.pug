@@ -17,6 +17,7 @@ html(lang='es')
     link(rel='stylesheet', href='css/flaticon.css')
     link(rel='stylesheet', href='css/icomoon.css')
     link(rel='stylesheet', href='css/style.css')
+    script(src='js/ckeditor.js')
   body
     nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light
       .container
@@ -43,7 +44,6 @@ html(lang='es')
                 a.nav-link(href='/ver_articulos') Articulos
               li.nav-item
                 a.nav-link(href='/login') Iniciar Sesión
-            
     // END nav
     .hero-wrap(style="background-image: url('images/bg_1.jpg');", data-stellar-background-ratio='0.5')
       .overlay
@@ -68,91 +68,7 @@ html(lang='es')
                 
     section.services-section.py-5.py-md-0.bg-light
       .container
-        .row.no-gutters.d-flex
-          .col-md-6.col-lg-3.d-flex.align-self-stretch.ftco-animate
-            .media.block-6.services.d-block
-              .icon
-                span.flaticon-charity
-              .media-body
-                h3.heading.mb-3 Dios es amor
-                p Dios te ama! 
-                p El amor de Dios se escribe con MAYÚSCULAS
-                p A él le importas mucho
-                p Recuerda que todo es para bien
-          .col-md-6.col-lg-3.d-flex.align-self-stretch.ftco-animate
-            .media.block-6.services.d-block
-              .icon
-                span.flaticon-adoption
-              .media-body
-                h3.heading.mb-3 Cristo te salva
-                p El amor de Dios está por encima de tus pecados
-                p La salvación y el perdón es un regalo inmerecido
-                p Tu vida es un regalo
-          .col-md-6.col-lg-3.d-flex.align-self-stretch.ftco-animate
-            .media.block-6.services.active.d-block
-              .icon
-                span.flaticon-volunteer
-              .media-body
-                h3.heading.mb-3 Cristo Vive! Ha Resucitado!
-                p El está presente en tu vida, camina contigo donde quiera que vayas
-          .col-md-6.col-lg-3.d-flex.align-self-stretch.ftco-animate
-            .media.block-6.services.d-block
-              .icon
-                span.flaticon-open-book
-              .media-body
-                h3.heading.mb-3 El Espirítu da vida
-                p Acude a Él cada día y pídele que contadies el amor de Dios a tu alrededor
-    section.ftco-section.ftco-causes
-      .container
-        .row.justify-content-center.pb-3
-          .col-md-10.heading-section.text-center.ftco-animate
-            h2.mb-4 Construyamos un mundo sin maltrato y abandono infantil.
-            p
-              | Muy lejos, detrás de las montañas, lejos de los países Vokalia y Consonantia
-      .container
-        .row
-          .col-md-12
-            .carousel-causes.owl-carousel
-              .item
-                a.causes.text-center(href='/')
-                  .img(style='background-image: url(images/causes-1.jpg);')
-                  h2 Adopción, crianza y cuidado de niños
-              .item
-                a.causes.text-center(href='/')
-                  .img(style='background-image: url(images/causes-2.jpg);')
-                  h2 Desventajas Jóvenes
-              .item
-                a.causes.text-center(href='/')
-                  .img(style='background-image: url(images/causes-3.jpg);')
-                  h2 Servicios de Meditación y Crisis
-              .item
-                a.causes.text-center(href='/')
-                  .img(style='background-image: url(images/causes-4.jpg);')
-                  h2 Proporcionndo cuidado y educación infantil
-              .item
-                a.causes.text-center(href='/')
-                  .img(style='background-image: url(images/causes-5.jpg);')
-                  h2 Servicios de salvaguardia y consultoría
-    section.testimony-section
-      .container
-        .row.ftco-animate.justify-content-center
-          .col-md-6.d-flex
-            .testimony-img(style='background-image: url(images/PapaJovenes.jpg);')
-          .col-md-6.py-5
-            .heading-section.heading-section-white.pt-4.ftco-animate
-              h2.mb-0 Acerca de la Enciclíca
-            .carousel-testimony.owl-carousel.ftco-owl
-              .item
-                .testimony-wrap.pb-4
-                  .text
-                    p.mb-4
-                      | Fecha de publicación: 2 de abril de 2019. Autor: Francisco, Francesco (Jorge Mario Bergoglio)
-                    p.mb-4
-                      | Lee la Encíclica: 
-                    a(href="https://opusdei.org/es-hn/article/christus-vivit-cristo-vive-sinodo-jovenes-exhortacion-apostolica-papa-francisco/") Click aqui
-                    
-                      
-                  .d-flex
+        block contenido
                     
               
     footer.ftco-footer.ftco-section
@@ -164,8 +80,8 @@ html(lang='es')
               | Copyright ©
               script.
                 document.write(new Date().getFullYear());
-              |  Todos los derechos reservados | Universidad Catolica de Honduras | JS  |
-              br 
+              |  Todos los derechos reservados | Universidad Catolica de Honduras | JS |
+              br
               a(href='https://colorlib.com', target='_blank') Colorlib
               // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
               // loader
@@ -188,3 +104,4 @@ html(lang='es')
               script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
               script(src='js/google-map.js')
               script(src='js/main.js')
+              

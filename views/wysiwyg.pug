@@ -1,18 +1,32 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    title Crear Articulo
-    script(src='js/ckeditor.js')
-  body
-    h1 Classic editor
-    textarea#editor(name='content')
-      | <p>This is some sample content.</p>
-    script.
-      ClassicEditor
-      .create( document.querySelector( '#editor' ) )
-      .catch( error => {
-      console.error( error );
-      } );
+extends ./articulos
+include ./mixins/footer
+
+block contenido
+  script(src='js/ckeditor.js')
 
 
+  section
+      form.bg-light.p-5.contact-form(action='/crear_articulo', method='POST')
+        .form-group
+          h3 Nombre del articulo
+          input.form-control(name="titulo", type='text', placeholder='Nombre del articulo')
+          h1 Cuerpo del articulo
+          textarea#editor(name='content').form-control
+          input.btn.btn-primary.py-3.px-5(id="submit" ,type='submit', value='Aceptar')
+        
+
+    
+  
+  
+  
+  
+  script.
+    ClassicEditor
+    .create( document.querySelector( '#editor' ) ).then( newEditor => {
+        editor = newEditor;
+    } )
+    .catch( error => {
+    console.error( error );
+    } );
+
+  

@@ -33,7 +33,6 @@ exports.GuardarUsuario  = async (req, res) => {
     const email = req.body.email;
     const username = req.body.username;
     const password = req.body.password;
-    console.log(name)
     let errores = [];
     
     if (!email && !username && !password) {

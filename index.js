@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 // Importar los módulos para utilizar passport
 const passport = require('passport')
 
-
+const session = require("express-session")
 
 
 // Crear la conexión con la Base de Datos
@@ -38,7 +38,7 @@ const app = express();
 
 // Desde dónde se cargan los archivos estáticos
 app.use(express.static('public'));
-
+app.use(session({ secret: "cats" }));
 // requerido para iniciar passport
 app.use(passport.initialize());
 app.use(passport.session());
@@ -56,6 +56,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('*', function(req, res, next){
+    res.locals.user = req.user || null;
+    next();
+});
 // Añadir la carpeta (ruta) que contiene las View (vistas)
 app.set('views', path.join(__dirname, './views'));
 

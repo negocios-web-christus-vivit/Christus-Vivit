@@ -27,7 +27,6 @@ const Usuario = db.define('usuario', {
 
 });
 
-Usuario.hasMany(Articulo);
 
 // Importar el modelo para poder utilizarlo
 module.exports = Usuario;

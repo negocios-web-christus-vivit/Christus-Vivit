@@ -22,11 +22,6 @@ const Articulo = db.define('articulo', {
     cuerpo : {
         type: Sequelize.STRING
     },
-    
-    autor : {
-        type: Sequelize.STRING
-    },
-
     url : Sequelize.STRING
 }, {
     hooks : {

@@ -1,0 +1,13 @@
+extends ./articulos
+
+block contenido
+    if (articulos)
+        each articulo in articulos
+            li  
+            h1 holia
+            #{pugCode}
+            a(href=`/proyectos/${articulo.url}`) #{articulo.nombre} 
+            div #{articulo.cuerpo}
+            
+            
+            

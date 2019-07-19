@@ -23,18 +23,29 @@ module.exports = function () {
 
     // Rutas de articulos
     router.get('/', articulosController.articulosHome);
-    router.get('/wysiwyg', articulosController.wysiwyg);
+    router.get('/ver_articulos', articulosController.ariculosHome2)
+    router.get('/crear_articulos', articulosController.wysiwyg);
+    router.post('/crear_articulo',  body('content').not().isEmpty(), body('titulo').not().isEmpty(),articulosController.nuevoArticulo);
 
 
     // Rutas de User
     router.get('/register', userController.UserRegistration);
-    router.post('/register', body('name').not().isEmpty(), body('email').not().isEmpty().isEmail(), body('username').not().isEmpty(),
+    router.post('/register', body('email').not().isEmpty().isEmail(), body('username').not().isEmpty(),
         body('password').not().isEmpty(), body('password2').equals('password'), userController.GuardarUsuario);
 
     router.get('/login', userController.UserLogin);
-    router.post('/login', passport.authenticate('local', { successRedirect: '/',
-    failureRedirect: '/login',
-    failureFlash: true }));
+    router.post('/login', function (req, res, next) {
+        passport.authenticate('local', {
+            successRedirect: '/',
+            failureRedirect: '/login'
+        })(req, res, next);
+    });
+
+    // Logout
+    router.get('/logout', function (req, res) {
+        req.logOut();
+        res.redirect('/login');
+    });
 
 
 
