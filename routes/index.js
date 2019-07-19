@@ -26,6 +26,7 @@ module.exports = function () {
     router.get('/ver_articulos', articulosController.ariculosHome2)
     router.get('/crear_articulos', articulosController.wysiwyg);
     router.post('/crear_articulo',  body('content').not().isEmpty(), body('titulo').not().isEmpty(),articulosController.nuevoArticulo);
+    router.get('/articulo/:url', articulosController.articuloPorUrl);
 
 
     // Rutas de User

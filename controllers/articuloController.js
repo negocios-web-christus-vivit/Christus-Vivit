@@ -3,6 +3,8 @@ const Articulo = require('../models/Articulo');
 //importar convertidor a pug
 const html2pug = require('html2pug')
 
+var markdown = require('marked');
+
 exports.articulosHome = async (req, res) => {
     // Obtener todos los proyectos
     // const articulo = await Articulo.findAll();
@@ -19,10 +21,11 @@ exports.ariculosHome2 = async(req, res) =>{
 
     const [articulos] = await Promise.all([articulosPromise]).then();
     
-    const pugCode = 'h1 holia'
+    const text = "figure.media oembed(url='https://www.youtube.com/watch?v=A0S3Wy0ofZg')";
     res.render('verArticulos',{
         articulos,
-        pugCode
+        markdown,
+        text
     });
 }
 exports.nuevoArticulo = async (req, res) => {
@@ -48,7 +51,20 @@ exports.nuevoArticulo = async (req, res) => {
         await Articulo.create({nombre: newArticle.nombre, cuerpo: newArticle.cuerpo});
         res.redirect('/ver_articulos');
     }
+}
 
+exports.articuloPorUrl = async (req, res) => {
+
+    const articulosPromise = Articulo.findOne({
+        where : {
+            url : req.params.url
+        }
+    });
+
+    const [articulo] = await Promise.all([articulosPromise]).then();
     
+    res.render('verArticuloIndividual',{
+        articulo
+    });
 
 }
